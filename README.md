@@ -2,7 +2,7 @@
     Pre-contextual Foundational model for learning heustric behaviors. Within and out of professional 
     environments. 
 
-This foundational deep learning model is designed to serve as a starting point for training various behaviors and capabilities. It is built upon established deep learning architectures and techniques, providing a robust and flexible foundation for further development and customization.
+This foundational deep learning model is designed to serve as a starting point for training various 3D heustric behaviors and capabilities. It will be built upon established deep learning architectures and techniques, providing a robust and flexible foundation for further development and customization.
 
 ## disclaimer 
     the context of this document is subjective to blackbox test driven development. So, it's knowledge is limited to lingo exposure.
