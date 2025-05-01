@@ -8,8 +8,8 @@ __pycache__/
 
 
 # Dev nuances 
-.txt
-.cfg
+*.txt
+*.cfg
 
 # Distribution / packaging
 .Python
