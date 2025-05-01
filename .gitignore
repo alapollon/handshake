@@ -7,9 +7,10 @@ __pycache__/
 *.so
 
 
-#Dev nuances 
+# Dev nuances 
 .txt
 .cfg
+
 # Distribution / packaging
 .Python
 build/
