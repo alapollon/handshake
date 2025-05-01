@@ -7,10 +7,11 @@ __pycache__/
 *.so
 
 
-# Dev nuances 
+# Dev nuances
+ 
 *.txt
 *.cfg
-
+*.ipynb
 # Distribution / packaging
 .Python
 build/
