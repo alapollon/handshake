@@ -9,7 +9,11 @@ setup(
     long_description=open("README.md").read().splitlines()[5],
     long_description_content_type="text/markdown",
     url="https://github.com/alapollon/hand.git",  # Repository URL
-    packages=find_packages(),  # Automatically find sub-packages
+    packages=find_packages(
+
+            
+
+        ),  # Automatically find sub-packages
     classifiers=[
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: MIT License",
