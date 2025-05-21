@@ -5,10 +5,8 @@ except ImportError:
      
 import asyncio as sync
 import time as T
-import socket 
-from socket import gethostbyaddr,
-                 getservbyport,
 
+import socket
 from ss import BaseRequestHandler, 
                 StreamRequestHandler, 
                 ForkingUDPServer, 
@@ -28,16 +26,10 @@ base = BaseRequestHandler;
 stream = StreamRequestHandler; 
 fork_tcp_server = ForkingTCPServer
 fork_udp_server = ForkingUDPServer
-get_log = log.getLogger('com.heustric_reasoning.app %()s')
-
-
-def __init__(self):
-   self.origins = {}
-
-
+get_log = log.getLogger('com.heustricreasoning.app %()s')
 ip6 = has_ipv6
 word = htonl
-dword htons
+dword = htons
 oust = getdefaulttimeout
 
 set_of_expectations = (
@@ -46,12 +38,15 @@ set_of_expectations = (
     "err" 
 )
 
+class HandServer(ForkingUDPServer):
+    pass
+
 async def get_hostname_by_ip(link):
-    await host = gethostbyaddr(link)
+    await host = socket.gethostbyaddr(link)
     return host
 
 async def get_host_services (porto, protocoltypeb):
-    await service = getservbyport
+    await service = socket.getservbyport(porto, protocoltypeb)
     if service is err 
     return service 
 
