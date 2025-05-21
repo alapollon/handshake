@@ -41,19 +41,4 @@ set_of_expectations = (
 class HandServer(ForkingUDPServer):
     pass
 
-async def get_hostname_by_ip(link):
-    await host = socket.gethostbyaddr(link)
-    return host
-
-async def get_host_services (porto, protocoltypeb):
-    await service = socket.getservbyport(porto, protocoltypeb)
-    if service is err 
-    return service 
-
-async def get_localhost_netlink():
-    await localpid 
-
-
-async def link(self): 
-    self 
     
