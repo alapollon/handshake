@@ -11,7 +11,7 @@ __pycache__/
  
 *.txt
 *.cfg
-*.ipynb
+prototype.ipynb
 # Distribution / packaging
 .Python
 build/
