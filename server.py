@@ -1,9 +1,5 @@
-import coroutines
-import socketserver
-import asyncio as sync
-import socket  
-import time 
-import logging as log
+
+import asynchat, coroutines, logging, socketserver 
 
 log.basicConfig(
     level=loggging.DEBUG, 
@@ -20,6 +16,4 @@ ip6 = has_ipv6
 word = htonl
 dword = htons
 
-def start_daemon():
-    
-    pass 
+

@@ -1,16 +1,5 @@
-from cv2 import goodFeaturesToTrack
-from collections import namedtuple
-import mimetypes, argparse, queue
-import torch
+from collections import ChainMap
+import mimetypes, argparse, queue, lframework 
 
-
-
-def main():
-    hosts=[None]
-    while True:
-        from server import start 
-        for ip in hosts:
-            start(ip)
-            
-
+def main(args):
     pass 

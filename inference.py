@@ -1,27 +1,35 @@
 from cv2 import Canny, goodFeaturesToTrack
 from collections import namedtuple
 from queue import Queue
+from numpy import array, zeros
+import filters 
+import tensorflow as tf
+import lframework
 
-def calculate_canny_edges(): 
-    pass
-
-
-class PlaneInference():
-   def __init__(self, data_name, ):
-    self.category=namedtuple(data_name, ['edge', 'shapes', 'histogram','distance', 'limits', 'limits_count'])
+refractions= tf.keras.Sequential([
     
-    def kernel(*args):
-        from scipy import sparse
-        appetature, filter, frame=args 
-        resolution=None 
-        corners=goodFeaturesToTrack
-        matrix=one(frame, dtype="unit8")
-        while True: 
-           pass 
-        #todo in thought process  
-        if None:
-            sparse_matrix=sparse.csr_matrix(matrix)
+]) 
+
+enclosures= tf.keras.Sequential([
+
+])
+
+
+class PlaneInferenceData():
+   def __init__(self, ds_name, ):
+        self.category=namedtuple(ds_name, ['edge', 'shapes', 'histogram','distance', 'limits_count'])
         pass 
+    
+    def kernel(dimensions: set=(None, None, None, 3), args):
+        path, parts, shuffle =args
+        try: 
+            output_signature=(tf.TensorSpec(shape = dimensions, dtype=tf.float32), tf.TensorSpec(shape=dimensions, dtype=tf.int16))
+            ds=tf.data.Dataset.from_generator(lframework.Framework(path, parts, shuffle), output_signature=output_signature)
+        except :
+            pass 
+            
+        
+        
 
 
 

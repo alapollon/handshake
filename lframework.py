@@ -5,58 +5,38 @@ from cv2 import Canny, calcOpticalFlowPyrLK, goodFeaturesToTrack, Laplacian, Vid
 from inference import PlaneInference as pid
 from numpy import one, array
 from collections import ChainMap
-import asyncio, functools, pathlib, os 
-
-def symbol(path):
-    get=os.path
-    if get.filepath(path):
-        onpath=path
-        return onpath
-    elif get.isdir(path):
-        items=os.listdir(path)
-        return items 
-
-def width(data):
-    frame_width=int(cap.get(CAP_PROP_FRAME_WIDTH))
-    return frame_width
-
-def height(data):
-    frame_height=int(cap.get(CAP_PROP_FRAME_HEIGHT))
-    return frame_height
+import asyncio, functools, pathlib, os
 
 
-class Discrete(object):
-  def __init__(self, frame, *args):
-    self.inference=object
-     
-  def compose(self, data):
-    frame_width=width(data)
-    frame_height=height(data)
-    pass 
-     
-
-class Lframework(): 
-    def __init__(self):
-        self.count=None
+class framework(): 
+    def __init__(self, training: boolean, path, n_frames):
+        self.fit=training
+        self.count=n_frames
+        self.stored_sample_names=sorted(set(media.name for media in self.path.iterdir() if p.is_dir()))
+        self.paths_identity_for_sample= dict((name, idx) for idx, name in enumerate(self.stored_sample_names))
         self.w=[None]
         pass
 
-    def process(self, path):
+    def get_file_and_sample_name(self):
+        media_paths=list(self.path.glob( '*/*.mp4'| '*/*.avi'))
+        samples=[ sample.parent.name for sample in media_paths ]
+        return media_paths, samples 
+    
+
+    def __call__(self):
+        media_paths, samples= self.get_file_and_sample_name()
         while True:
-            s=symbol(path)
+            presets=list(zip(media_paths, samples))
             try: 
-                if s :
-                    cap=imread
-                    try:
-                        pass
-                    except :  
-                        pass
+                if self.training:
+                    random.shuffle(presets)
 
-                elif s:
-                    cap=VideoCapture.read
-                    fps=cap.get()
-                    self.w[(lambda path:self.count+=cap.get()) i for i in cap(path)[1]]
-
+                for media_path, samples in presets:
+                    media=frames_from_media_file(path, self.n_frames) 
+                    preset_label=self.stored_sample_names[name]
+                    yield media,label 
+                    pass 
             except: 
                     pass 
-                
+
+
